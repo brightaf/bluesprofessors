@@ -1,0 +1,123 @@
+/* ----------------------------------------------------------------
+	Universe
+-----------------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 20px;
+    width: 100vw;
+}
+
+body {
+    width: 76.458%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+
+header {
+    width: 100%;
+}
+
+header img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+
+/* ----------------------------------------------------------------
+	Sections
+-----------------------------------------------------------------*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*  Gigs
+-----------------------------------------------------------------*/
+.event {
+    display: flex;
+}
+
+.event-details {
+    width: 86%;
+}
+
+.event-directions-and-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 15%;
+    text-align: center;
+}
+
+/*  Albums
+-----------------------------------------------------------------*/
+.spotify-follow-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.spotify-listen {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.spotify-listen iframe {
+    width: 300px;
+    height: 380px;
+    margin: auto;
+}
+
+/*  About
+-----------------------------------------------------------------*/
+
+
+
+/*  Contact
+-----------------------------------------------------------------*/
+#contact {
+    display: flex;
+    align-items: center;
+}
+
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
