@@ -9,6 +9,7 @@
 ## About
 ## Contact
 # Footer
+#Responsive
 
 /* ----------------------------------------------------------------
 	Universe
@@ -32,7 +33,6 @@ html {
 }
 
 body {
-    
     width: 76.458%;
     background-color: var(--background-color);
 }
@@ -41,9 +41,19 @@ ul {
     list-style-type: none;
 }
 
-a, :link, a:visited, p, h2, label, div {
+a,
+:link,
+a:visited,
+p,
+h2,
+label,
+div {
     color: var(--foreground-color);
-    text-decoration:none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
 }
 
 .home {
@@ -65,8 +75,8 @@ a, :link, a:visited, p, h2, label, div {
 }
 
 .gallery {
-   height: 16.67rem;
-   margin: .5rem;
+    height: 16.67rem;
+    margin: .5rem;
 }
 
 /* ----------------------------------------------------------------
@@ -94,6 +104,9 @@ header nav ul {
     width: 50%;
 }
 
+.navbar-item  {
+    font-size: 1.5rem;
+}
 
 /* ----------------------------------------------------------------
 	Sections
@@ -119,12 +132,14 @@ section {
     margin-right: .5rem;
 }
 
-.event-title, .event-location, .event-description {
+.event-title,
+.event-location,
+.event-description {
     margin-top: 1.975rem;
     margin-bottom: 0.975rem;
 }
 
-.event-title > p {
+.event-title>p {
     font-weight: bold;
 }
 
@@ -144,7 +159,7 @@ section {
     border-radius: 15px;
 }
 
-.event-directions-and-price .btn{
+.event-directions-and-price .btn {
     background-color: var(--foreground-color);
     color: var(--background-color);
 }
@@ -217,4 +232,46 @@ footer ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+/* ----------------------------------------------------------------
+	Sections
+-----------------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 1024px) {
+    html,body {
+        width: 100%;
+    }
+
+    .navbar > ul > {
+        padding-left: 1rem;
+    }
+
+    .spotify-listen {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spotify-listen iframe  {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .event {
+        flex-direction: column;
+    }
+    .event-directions-and-price {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space;
+        flex-wrap: wrap;
+    }
+    .event-directions-and-price > .btn {
+        min-width: 11.3rem;
+        margin: 1rem;
+    }
+
+    .navbar-item  {
+        font-size: 1rem;
+    }
+    
 }
