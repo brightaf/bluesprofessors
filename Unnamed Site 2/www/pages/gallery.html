@@ -25,20 +25,11 @@
 
     <div class="wrapper"></div>
 
-    <script>
-        $.ajax({
-            url: "/img",
-            success: function (data) {
-                $(data).find('a').attr("href", function (i, value) {
-                    if (value.match(/\.(jpg|jpeg|png|gif)/)) {
-                        $(".wrapper").append("<img class= gallery src='" + value + "'>")
-                    }
-                });
-            }
-        });
-    </script>
 
 
+
+
+    <script src="/js/image.js"></script>
 
     <script src="/js/master.js"></script>
 
