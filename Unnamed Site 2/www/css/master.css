@@ -52,9 +52,9 @@ div {
     text-decoration: none;
 }
 
-header + img {
+header+img {
     width: 100%;
-} 
+}
 
 .home {
     font-size: 2rem;
@@ -103,7 +103,7 @@ header nav ul {
     width: 50%;
 }
 
-.navbar-item  {
+.navbar-item {
     font-size: 1.5rem;
 }
 
@@ -237,11 +237,13 @@ footer ul {
 	Sections
 -----------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 1024px) {
-    html,body {
+
+    html,
+    body {
         width: 100%;
     }
 
-    .navbar > ul > {
+    .navbar>ul> {
         padding-left: 1rem;
     }
 
@@ -250,7 +252,7 @@ footer ul {
         flex-direction: column;
     }
 
-    .spotify-listen iframe  {
+    .spotify-listen iframe {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
@@ -258,19 +260,20 @@ footer ul {
     .event {
         flex-direction: column;
     }
+
     .event-directions-and-price {
         width: 100%;
         flex-direction: row;
         justify-content: space;
         flex-wrap: wrap;
     }
-    .event-directions-and-price > .btn {
+
+    .event-directions-and-price>.btn {
         min-width: 11.3rem;
         margin: 1rem;
     }
 
-    .navbar-item  {
+    .navbar-item {
         font-size: 1rem;
     }
-    
 }
