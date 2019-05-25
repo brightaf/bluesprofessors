@@ -238,9 +238,8 @@ footer ul {
 -----------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 1024px) {
 
-    html,
-    body {
-        width: 100%;
+    body{
+        width: 90%;
     }
 
     .navbar>ul> {
