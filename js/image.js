@@ -1,10 +1,12 @@
 $.ajax({
+    type: 'GET',
     url: "img",
+    dataType: 'json',
+    contentType: 'application/json',
     success: function (data) {
-        $(data).find('a').attr("href", function (i, value) {
-            if (value.match(/\.(jpg|jpeg|png|gif)/)) {
-                $(".wrapper").append("<img class= gallery src='" + value + "'>");
-            }
-        });
+        for (let index = 0; index < data.length; index++) {
+            $(".wrapper").append("<img class= gallery src='" + "img\/" + data[index] + "'>");
+            
+        }
     }
 });
