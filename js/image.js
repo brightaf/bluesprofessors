@@ -2,7 +2,7 @@ $.ajax({
     type: 'GET',
     url: "img/content.json",
     // dataType: 'application/json',
-    contentType: 'application/json',
+    // contentType: 'application/json',
     success: function (imageDirectory) {
         for (var index = 0; index < imageDirectory.images.length; index++) {
             $(".wrapper").append("<img class=gallery src='img/" + imageDirectory.images[index] + "'>")
