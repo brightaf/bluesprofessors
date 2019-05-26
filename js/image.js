@@ -1,5 +1,5 @@
 $.ajax({
-    type: 'GET',
+    // type: 'GET',
     url: "img/content.json",
     // dataType: 'application/json',
     // contentType: 'application/json',
