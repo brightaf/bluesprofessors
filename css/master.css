@@ -188,6 +188,10 @@ section {
 
 /*  About
 -----------------------------------------------------------------*/
+#about {
+    margin-top: 4.5rem;
+}
+
 .individual-testimonial {
     margin-top: 0.975rem;
     margin-bottom: 0.975rem;
@@ -234,7 +238,7 @@ footer ul {
 }
 
 /* ----------------------------------------------------------------
-	Sections
+	Responsive
 -----------------------------------------------------------------*/
 @media (min-width: 320px) and (max-width: 1024px) {
 
