@@ -1,0 +1,302 @@
+/*--------------------------------------------------------------
+>>> CONTENTS:
+----------------------------------------------------------------
+# Universe
+# Video 
+# Header
+# Sections
+## Gigs
+## Albums
+## About
+## Contact
+# Footer
+# Responsive
+
+/* ----------------------------------------------------------------
+	Universe
+-----------------------------------------------------------------*/
+
+* {
+    --background-color: black;
+    --foreground-color: white;
+    font-family: Helvetica, Arial, "sans-serif";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-size: 18px;
+    width: 100%;
+}
+
+body {
+    width: 76.458%;
+    background-color: var(--background-color);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a,
+:link,
+a:visited,
+p,
+h2,
+label,
+div {
+    color: var(--foreground-color);
+    text-decoration: none;
+}
+
+header+img {
+    width: 100%;
+}
+
+.name {
+    margin-top: .5em;
+    width: 100%;
+    border-radius: 2%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.gallery {
+    height: 16.67rem;
+    margin: .5rem;
+}
+
+/* ----------------------------------------------------------------
+	Video
+-----------------------------------------------------------------*/
+.video {
+    width: 512px;
+    height: 420px;
+    margin: auto;
+    margin-top: 1rem;
+} 
+ 
+ 
+ 
+ 
+ .video-gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* ----------------------------------------------------------------
+	Header
+-----------------------------------------------------------------*/
+
+
+header {
+    width: 100%;
+}
+
+header img {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.navbar-item {
+    font-size: 1.5rem;
+}
+
+/* ----------------------------------------------------------------
+	Sections
+-----------------------------------------------------------------*/
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4.5rem;
+}
+
+/*  Gigs
+-----------------------------------------------------------------*/
+.event {
+    display: flex;
+    margin-top: 1.45rem;
+    margin-bottom: 1.45rem;
+}
+
+.event-details {
+    width: 86%;
+    margin-right: .5rem;
+}
+
+.event-title,
+.event-location,
+.event-description {
+    margin-top: 1.975rem;
+    margin-bottom: 0.975rem;
+}
+
+.event-title>p {
+    font-weight: bold;
+}
+
+.event-directions-and-price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 15%;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.78rem;
+    border-radius: 15px;
+}
+
+.event-directions-and-price .btn {
+    background-color: var(--foreground-color);
+    color: var(--background-color);
+}
+
+.directions a {
+    color: var(--background-color);
+}
+
+
+/*  Albums
+-----------------------------------------------------------------*/
+.spotify-follow-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.spotify-listen {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.spotify-listen iframe {
+    width: 300px;
+    height: 380px;
+    margin: auto;
+}
+
+/*  About
+-----------------------------------------------------------------*/
+#about {
+    margin-top: 4.5rem;
+}
+
+.individual-testimonial {
+    margin-top: 0.975rem;
+    margin-bottom: 0.975rem;
+}
+
+
+/*  Contact
+-----------------------------------------------------------------*/
+#contact {
+    display: flex;
+    align-items: center;
+}
+
+.sign-up-form input {
+    width: calc(100% - 1rem);
+    height: 2rem;
+    margin: 1rem;
+    border-radius: 5px;
+}
+
+#mc-embedded-subscribe {
+    background-color: var(--foreground-color);
+    color: var(--background-color);
+    font-weight: bold;
+    width: 50%;
+}
+
+.clear {
+    display: flex;
+    justify-content: center;
+}
+
+/* ----------------------------------------------------------------
+	Footer
+-----------------------------------------------------------------*/
+footer {
+    font-size: 1.75rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* ----------------------------------------------------------------
+	Responsive
+-----------------------------------------------------------------*/
+@media (min-width: 320px) and (max-width: 1024px) {
+
+    body{
+        width: 90%;
+    }
+
+    .navbar>ul> {
+        padding-left: 1rem;
+    }
+
+    .spotify-listen {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .spotify-listen iframe {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .event {
+        flex-direction: column;
+    }
+
+    .event-directions-and-price {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space;
+        flex-wrap: wrap;
+    }
+
+    .event-directions-and-price>.btn {
+        min-width: 11.3rem;
+        margin: 1rem;
+    }
+
+    .navbar-item {
+        font-size: 1rem;
+    }
+
+    .video {
+        width: 90%;
+    }
+}
